@@ -41,8 +41,8 @@ body::before{
 }
 
 /* ============ 橫幅 ============ */
-.hero{position:relative;max-width:620px;margin:0 auto}
-.hero img{display:block;width:100%;height:auto;border-bottom:var(--line);border-radius:0 0 26px 26px}
+.hero{position:relative;max-width:560px;margin:0 auto;padding:14px 16px 0}
+.hero img{display:block;width:100%;height:auto;border:var(--line);border-radius:var(--radius);box-shadow:none}
 
 .wrap{max-width:560px;margin:0 auto;padding:0 16px 40px}
 
@@ -290,7 +290,7 @@ footer{text-align:center;font-size:13px;font-weight:600;color:#5d4f3a;padding:6p
    ★ 部署後只要改這一行：貼上 Apps Script「網頁應用程式」的網址
    （留空 = 測試模式，不會真的送出）
    ============================================================ */
-const API_URL = '';
+const API_URL = 'https://script.google.com/macros/s/AKfycbwnrxzjmwGL_SfyCi9uZ4qXnLU8IR9P5Uh6bpDqd8armJrhIzAU9uaDDyHOLAiqQeLQ/exec';
 
 const $ = id => document.getElementById(id);
 const f = $('f'), content = $('content'), count = $('count'), phone = $('phone');
